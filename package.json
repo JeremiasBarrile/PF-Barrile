@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JeremiasBarrile/PreEntrega3/issues"
   },
-  "homepage": "https://github.com/JeremiasBarrile/PreEntrega3#readme"
+  "homepage": "https://github.com/JeremiasBarrile/PreEntrega3#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }
