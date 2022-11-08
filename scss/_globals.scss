@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "monserrat";
+}
+.conteiner {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+header {
+  background: rgb(167, 105, 35);
+  background: linear-gradient(
+    0deg,
+    rgba(167, 105, 35, 1) 21%,
+    rgba(203, 125, 37, 1) 49%,
+    rgba(232, 140, 36, 1) 81%,
+    rgba(195, 135, 66, 1) 100%,
+    rgba(230, 178, 119, 1) 100%
+  );
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}

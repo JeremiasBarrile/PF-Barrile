@@ -1,0 +1,20 @@
+$bordes-negros: border solid #000;
+$blanco: #fff;
+$negro: #000;
+$naranja: rgb(207, 114, 9);
+$degrade: linear-gradient(
+  0deg,
+  rgba(167, 105, 35, 1) 21%,
+  rgba(203, 125, 37, 1) 49%,
+  rgba(232, 140, 36, 1) 81%,
+  rgba(195, 135, 66, 1) 100%,
+  rgba(230, 178, 119, 1) 100%
+);
+$margin0auto: 0 auto;
+$size-Title: 4rem;
+$size-SubTitle: 2rem;
+$size-Normal: 1rem;
+$mayuscula: uppercase;
+$display: flex;
+$button-transition: all 0.2s ease-in-out;
+$tipodeletra: "monserrat";

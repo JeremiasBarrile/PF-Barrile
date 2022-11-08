@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "monserrat";
+}
+
+.conteiner {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+header {
+  background: rgb(167, 105, 35);
+  background: linear-gradient(0deg, rgb(167, 105, 35) 21%, rgb(203, 125, 37) 49%, rgb(232, 140, 36) 81%, rgb(195, 135, 66) 100%, rgb(230, 178, 119) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 756px) {
+  .alto {
+    height: 100%;
+  }
+}
+.display-5 {
+  color: #000;
+  font-weight: bold;
+  font-family: "monserrat";
+  font-size: 4rem;
+  letter-spacing: 15px;
+  text-shadow: 4px 4px 5px #cdcdcd;
+  animation: 3s linear infinite alternate;
+}
+
+#contacto {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+#contacto .section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  font: 300 2rem "monserrat", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+#contacto .contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+#contacto .form-horizontal {
+  max-width: 80%;
+  font-family: "monserrat";
+  font-weight: 80%;
+}
+#contacto .form-control,
+#contacto textarea {
+  max-width: 100%;
+  background-color: #000;
+  color: #000;
+  letter-spacing: 1px;
+}
+#contacto .send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 300px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+#contacto .alt-send-button {
+  width: 300px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+#contacto .alt-send-button .sent-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "monserrat", sans-serif;
+  letter-spacing: 2px;
+}
+#contacto .alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+#contacto .direct-contact-container {
+  max-width: 80%;
+}
+#contacto .direct-contact-container .contact-list {
+  list-style-type: none;
+  margin-left: -70px;
+  padding-right: 5px;
+}
+#contacto .direct-contact-container .contact-list .list-item {
+  line-height: 4;
+  color: #000;
+}
+#contacto .direct-contact-container .contact-list .list-item .contact-text {
+  font: 300 15px "monserrat", sans-serif;
+  letter-spacing: 1.9px;
+  color: #000;
+}
+#contacto .direct-contact-container .contact-list .list-item .contact-text .place {
+  margin-left: 62px;
+}
+#contacto .direct-contact-container .contact-list .list-item .contact-text .phone {
+  margin-left: 56px;
+}
+#contacto .direct-contact-container .contact-list .list-item .contact-text .gmail {
+  margin-left: 53px;
+}
+#contacto .direct-contact-container .contact-list .list-item .contact-text .contact-text a {
+  color: #000;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+#contacto .direct-contact-container .contact-list .list-item .contact-text .contact-text a .contact-text a:hover {
+  color: #000;
+  text-decoration: none;
+}
+#contacto .social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#contacto .social-media-list li a {
+  color: #fff;
+}
+#contacto .social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#contacto .social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+#contacto .social-media-list li:hover {
+  background-color: rgb(207, 114, 9);
+}
+#contacto .social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+#contacto .social-media-list li:hover a {
+  color: #000;
+}
+#contacto hr {
+  border-color: #000;
+}
+@media screen and (max-width: 756px) {
+  #contacto .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #contacto .direct-contact-container,
+  #contacto .form-horizontal {
+    margin: 0 auto;
+  }
+  #contacto .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+  #contacto .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  #contacto .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 569px) {
+  #contacto .direct-contact-container,
+  #contacto .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+  #contacto .form-control,
+  #contacto textarea {
+    margin: 0 auto;
+  }
+  #contacto .name,
+  #contacto .email,
+  #contacto textarea {
+    width: 280px;
+  }
+  #contacto .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+  #contacto .social-media-list {
+    left: 0;
+  }
+  #contacto .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  #contacto .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 410px) {
+  #contacto .send-button {
+    width: 99%;
+  }
+}
+
+/* ayuda.html */
+h1 {
+  margin: 0px;
+}
+h1 .reveal-text,
+h1 .reveal-text:after {
+  animation-delay: 5;
+  animation-iteration-count: 1;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
+}
+h1 .reveal-text {
+  margin-top: 20px;
+  position: relative;
+  font-size: 30px;
+  user-select: none;
+  animation-name: reveal-text;
+  color: #000;
+  white-space: nowrap;
+  font-family: "Work Sans", sans-serif;
+}
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes revealer-text {
+  0%, 50% {
+    transform-origin: 0 50%;
+  }
+  60%, 100% {
+    transform-origin: 100% 50%;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+/* footer */
+.footer {
+  background-color: rgb(207, 114, 9);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  bottom: 0;
+}
+
+.iconos__footer {
+  text-align: center;
+  color: #fff;
+}
+.iconos__footer .iconos__footer a {
+  color: #fff;
+}
+.iconos__footer .iconos__footer a .iconos__footer a i {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+.iconos__footer .iconos__footer a .iconos__footer :hover,
+.iconos__footer .iconos__footer a .iconos__footer:focus {
+  opacity: 0.65;
+}
+
+/* footer */
+
+/*# sourceMappingURL=style.css.map */
