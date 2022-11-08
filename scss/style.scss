@@ -243,25 +243,29 @@
 
 h1 {
   margin: 0px;
-  .reveal-text,
-  .reveal-text:after {
-    animation-delay: 5;
-    animation-iteration-count: 1;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
-  }
+}
+.card {
+  margin: 20px;
+}
 
-  .reveal-text {
-    margin-top: 20px;
-    position: relative;
-    font-size: 30px;
-    user-select: none;
-    animation-name: reveal-text;
-    color: $negro;
-    white-space: nowrap;
-    font-family: "Work Sans", sans-serif;
-  }
+.reveal-text,
+.reveal-text:after {
+  animation-delay: 5;
+  animation-iteration-count: 1;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
+}
+
+.reveal-text {
+  margin-top: 20px;
+  position: relative;
+  font-size: 30px;
+  user-select: none;
+  animation-name: reveal-text;
+  color: $negro;
+  white-space: nowrap;
+  font-family: "Work Sans", sans-serif;
 }
 
 @keyframes reveal-text {

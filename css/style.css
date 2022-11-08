@@ -16,7 +16,14 @@ body {
 
 header {
   background: rgb(167, 105, 35);
-  background: linear-gradient(0deg, rgb(167, 105, 35) 21%, rgb(203, 125, 37) 49%, rgb(232, 140, 36) 81%, rgb(195, 135, 66) 100%, rgb(230, 178, 119) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(167, 105, 35) 21%,
+    rgb(203, 125, 37) 49%,
+    rgb(232, 140, 36) 81%,
+    rgb(195, 135, 66) 100%,
+    rgb(230, 178, 119) 100%
+  );
   position: sticky;
   top: 0;
   z-index: 2;
@@ -115,21 +122,50 @@ img {
   letter-spacing: 1.9px;
   color: #000;
 }
-#contacto .direct-contact-container .contact-list .list-item .contact-text .place {
+#contacto
+  .direct-contact-container
+  .contact-list
+  .list-item
+  .contact-text
+  .place {
   margin-left: 62px;
 }
-#contacto .direct-contact-container .contact-list .list-item .contact-text .phone {
+#contacto
+  .direct-contact-container
+  .contact-list
+  .list-item
+  .contact-text
+  .phone {
   margin-left: 56px;
 }
-#contacto .direct-contact-container .contact-list .list-item .contact-text .gmail {
+#contacto
+  .direct-contact-container
+  .contact-list
+  .list-item
+  .contact-text
+  .gmail {
   margin-left: 53px;
 }
-#contacto .direct-contact-container .contact-list .list-item .contact-text .contact-text a {
+#contacto
+  .direct-contact-container
+  .contact-list
+  .list-item
+  .contact-text
+  .contact-text
+  a {
   color: #000;
   text-decoration: none;
   transition-duration: 0.2s;
 }
-#contacto .direct-contact-container .contact-list .list-item .contact-text .contact-text a .contact-text a:hover {
+#contacto
+  .direct-contact-container
+  .contact-list
+  .list-item
+  .contact-text
+  .contact-text
+  a
+  .contact-text
+  a:hover {
   color: #000;
   text-decoration: none;
 }
@@ -249,18 +285,25 @@ img {
 }
 
 /* ayuda.html */
+.contenedor {
+  align-items: center;
+  margin: 0 auto;
+}
+
 h1 {
   margin: 0px;
 }
-h1 .reveal-text,
-h1 .reveal-text:after {
+
+.reveal-text,
+.reveal-text:after {
   animation-delay: 5;
   animation-iteration-count: 1;
   animation-duration: 1000ms;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
 }
-h1 .reveal-text {
+
+.reveal-text {
   margin-top: 20px;
   position: relative;
   font-size: 30px;
@@ -280,10 +323,12 @@ h1 .reveal-text {
   }
 }
 @keyframes revealer-text {
-  0%, 50% {
+  0%,
+  50% {
     transform-origin: 0 50%;
   }
-  60%, 100% {
+  60%,
+  100% {
     transform-origin: 100% 50%;
   }
   50% {
@@ -304,20 +349,19 @@ h1 .reveal-text {
   position: sticky;
   bottom: 0;
 }
-
-.iconos__footer {
+.footer .iconos__footer {
   text-align: center;
   color: #fff;
 }
-.iconos__footer .iconos__footer a {
+.footer .iconos__footer .iconos__footer a {
   color: #fff;
 }
-.iconos__footer .iconos__footer a .iconos__footer a i {
+.footer .iconos__footer .iconos__footer a .iconos__footer a i {
   font-size: 1.5rem;
   margin-left: 1.5rem;
 }
-.iconos__footer .iconos__footer a .iconos__footer :hover,
-.iconos__footer .iconos__footer a .iconos__footer:focus {
+.footer .iconos__footer .iconos__footer a .iconos__footer :hover,
+.footer .iconos__footer .iconos__footer a .iconos__footer:focus {
   opacity: 0.65;
 }
 
