@@ -278,12 +278,10 @@ h1 {
 }
 
 @keyframes revealer-text {
-  0%,
   50% {
     transform-origin: 0 50%;
   }
 
-  60%,
   100% {
     transform-origin: 100% 50%;
   }
